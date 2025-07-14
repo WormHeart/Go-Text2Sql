@@ -1,0 +1,45 @@
+# GoSql配置文件示例
+
+# 大语言模型配置
+llm:
+  # 提供商: openai, azure, gemini, local
+  provider: "openai"
+  # 模型名称
+  model: "gpt-3.5-turbo"
+  # 温度参数，控制生成的随机性
+  temperature: 0.3
+  # 最大生成token数
+  max_tokens: 2048
+  
+  # OpenAI配置
+  openai:
+    # API密钥 - 警告：切勿提交真实密钥到版本控制系统
+    api_key: "YOUR_OPENAI_API_KEY_HERE"
+    # API基础URL，默认为官方API
+    base_url: "https://api.openai.com/v1"
+  
+  # Azure OpenAI配置
+  azure:
+    # API密钥 - 警告：切勿提交真实密钥到版本控制系统
+    api_key: "YOUR_AZURE_API_KEY_HERE"
+    # 终端点URL
+    endpoint: "https://your-resource-name.openai.azure.com"
+    # 部署ID
+    deployment_id: "your-deployment-id"
+    # API版本
+    api_version: "2023-05-15"
+  
+  # Google Gemini配置
+  gemini:
+    # API密钥 - 警告：切勿提交真实密钥到版本控制系统
+    api_key: "YOUR_GEMINI_API_KEY_HERE"
+    # 可选：自定义基础URL
+    base_url: ""
+  
+  # 本地模型配置
+  local:
+    # 本地服务终端点
+    endpoint: "http://localhost:8000"
+    # 可选：模型路径
+    model_path: "/path/to/your/model"
+

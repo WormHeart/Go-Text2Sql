@@ -1,0 +1,9 @@
+llm:
+  provider: "openai"
+  model: "deepseek-chat"
+  temperature: 0.3
+  max_tokens: 2048
+
+  openai:
+    api_key: "sk-53373a233ed5495ab884039d3327ecca"
+    base_url: "https://api.deepseek.com/v1"

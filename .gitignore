@@ -1,0 +1,60 @@
+# 编译生成的文件
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 测试二进制文件
+*.test
+
+# 输出文件
+*.out
+
+# 依赖目录
+/vendor/
+
+# IDE文件
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 配置文件（包含API密钥）
+config.yaml
+/configs/config.yaml
+/configs/config.test.yaml
+*.env
+.env*
+secrets.yaml
+credentials.json
+
+# 数据目录（可能很大）
+/data/*
+!/data/ccspider_pg/
+!/data/ccspider_pg/**
+
+# 日志文件
+*.log
+
+bin/
+
+third_party/
+
+config_*
+
+# SQL结果目录
+**/sql_results/
+**/incorrect_queries/
+**/ambiguous_queries/
+**/correct_exact_match/
+**/correct_equivalent/
+**/incorrect_data_mismatch/
+**/incorrect_execution/
+**/incorrect_projection/
+**/incorrect_reference/
+**/incorrect_row_count/
+**/incorrect_unknown/
+
+.staticcheck.conf
+.staticcheckignore

@@ -1,0 +1,10 @@
+llm:
+  provider: "openai"
+  model: "/home/hejunfeng/models"
+  temperature: 0.6
+  max_tokens: 4096
+
+  openai:
+    api_key: "sk-53373a233ed5495ab884039d3327ecca"
+    base_url: "http://10.176.24.28:8000/v1"
+
